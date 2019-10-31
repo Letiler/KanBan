@@ -1,6 +1,7 @@
 .column {
   float: left;
   width: 33.33%;
+
 }
 
 .row: after {
@@ -13,4 +14,3 @@
   .column {
     width: 100%;
   }
-}
