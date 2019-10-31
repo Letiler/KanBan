@@ -67,9 +67,9 @@ body {
 
 }
 
-/* Formats the drag and drop items */
+/* Formats the drag and drop columns */
 #sortable1, #sortable2 {
-    border: 1px solid #eee;
+    border: 1px solid black;
     width: 142px;
     min-height: 20px;
     list-style-type: none;
@@ -79,10 +79,12 @@ body {
     margin-right: 10px;
 }
 
+/* Formats the drag and drop boxes */
 #sortable1 li, #sortable2 li {
     margin: 0 5px 5px 5px;
     padding: 5px;
     font-size: 1.2em;
     width: 120px;
+    background-color: black;
 
 }
