@@ -5,24 +5,62 @@
 <!-- this give the title to the webpage -->
     <title>After~Coding KanBan</title>
 <!-- this links the javascript -->
-    <script src="srcipt.js"> </script>
+    <script src="script.js"> </script>
 <!-- this links the style -->
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="syle.css">
 <!-- this links the layout -->
     <link rel="stylesheet" href="layout.css">
 
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!-- this links the layout -->
+    <link rel="stylesheet" type= "text/css" href="layout.css">
   </head>
+
+
   <body>
     <div class="header">
 <!-- This is our website header -->
       <h1>After~Coding KanBan</h1>
     </div>
 
-    <div>
+<ul>
+  <a href="WebsiteHTML.html">Home</a>
+  <a href="Project.html">Project</a>
+  <a href="memes.html">Memes</a>
+  <a href="employees.html" style="float:right">Employees</a>
+</ul>
+
+    <div class="row">
+      <div class="column">
+        <h2>To Do</h2>
+      </div>
+
+      <div class="column">
+        <h2>Doing</h2>
+      </div>
+
+      <div class="column">
+        <h2>Done</h2>
+      </div>
+    </div>
+
+<div>
   <!-- this is the button id -->
   <input id="butId"><br />
-<!-- this makes the button -->
+  <!-- this makes the button -->
   <button type="button">Add Item</button>
+</div>
+
+  <div class="sort">
+    <ul id="sortable1" class="connectedSortable">
+                  <li class="ui-state-default double">Item 1</li>
+                  <li class="ui-state-default double">Item 2</li>
+                  <li class="ui-state-default double">Item 3</li>
+                  <li class="ui-state-default double">Item 4</li>
+                  <li class="ui-state-default double">Item 5</li>
+    </ul>
   </div>
 
   </body>
