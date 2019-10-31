@@ -3,4 +3,3 @@ $( function() {
       connectWith: ".connectedSortable"
     }).disableSelection();
   } );
-        
