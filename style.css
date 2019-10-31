@@ -8,7 +8,7 @@ body {
     color: #0d0d0d;
     text-shadow: 1.1px 1.1px yellow;
     text-align: center;
-  }
+}
 
 .addItem {
   text-align: center;
@@ -31,6 +31,7 @@ body {
     padding: 5px;
     font-size: 1.2em;
     width: 120px;
+
 }
 
 ul {
