@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script>
+          $( function() {
+            $( "#sortable1, #sortable2" ).sortable({
+              connectWith: ".connectedSortable"
+            }).disableSelection();
+          } );
+          </script>
     <meta charset="utf-8">
 <!-- this give the title to the webpage -->
     <title>After~Coding KanBan</title>
@@ -17,6 +26,7 @@
 <!-- This is our website header -->
       <h1>After~Coding KanBan</h1>
     </div>
+    
 <!-- Fixed the navbar- VASH-->
     <div class="topnav">
       <a href="WebsiteHTML.html">Home</a>
@@ -32,7 +42,7 @@
     <div class="hr2">
         <hr>
     </div>
-
+    
     <div class="hr3">
         <hr>
     </div>
@@ -50,23 +60,21 @@
         <h2>Done</h2>
       </div>
     </div>
+<div>
+  <!-- this is the button id -->
+  <input id="butId"><br />
+  <!-- this makes the button -->
+  <button type="button" onClick="more()">Add Item</button>
+</div>
 
-    <div>
-        <!-- this is the button id -->
-        <input id="butId"><br />
-        <!-- this makes the button -->
-        <button type="button">Add Item</button>
-      </div>
-
-      <div class="sort">
-        <ul id="sortable1" class="connectedSortable">
-          <li class="ui-state-default double">Item 1</li>
-          <li class="ui-state-default double">Item 2</li>
-          <li class="ui-state-default double">Item 3</li>
-          <li class="ui-state-default double">Item 4</li>
-          <li class="ui-state-default double">Item 5</li>
-        </ul>
-      </div>
+  <div class="sort">
+    <ul id="sortable1" class="connectedSortable">
+    </ul>
+    <ul id="sortable2" class="connectedSortable">
+    </ul>
+    <ul id="sortable2" class="connectedSortable">
+    </ul>
+  </div>
 
   </body>
 </html>
