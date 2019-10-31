@@ -1,6 +1,18 @@
 body {
     font-size: 15px;
   	font-family: "Segoe UI";
+    background-color: #ececec;
+}
+
+.header {
+    color: #0d0d0d;
+    text-shadow: 1.1px 1.1px yellow;
+    text-align: center;
+}
+
+.addItem {
+  text-align: center;
+
 }
 
 #sortable1, #sortable2 {
@@ -12,30 +24,36 @@ body {
     padding: 5px 0 0 0;
     float: left;
     margin-right: 10px;
-  }
+}
 
 #sortable1 li, #sortable2 li {
     margin: 0 5px 5px 5px;
     padding: 5px;
     font-size: 1.2em;
     width: 120px;
-  }
 
-li.double {
-    border: 2px solid  #0f0f0f;
-    outline: 1.5px solid yellow;
-    box-shadow: 0 0 0 3px #0f0f0f;
-    margin-bottom: 1px;
-  }
+}
 
-h1 {
-    color: #0d0d0d;
-    text-shadow: 1.1px 1.1px yellow;
-    float: center;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-.column {
-    column-rule-style: double;
-    column-rule-width: thin;
-    column-rule-color: #0f0f0f
-  }
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
