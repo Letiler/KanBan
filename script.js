@@ -7,3 +7,8 @@ function more() {
   node.appendChild(textnode); 
   document.getElementById("sortable1").appendChild(node).classname; 
 }
+
+function remove(){
+  var node = document.getElementById('butid').value
+  node.removeChild("sortable1")
+}

@@ -5,7 +5,7 @@
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
           $( function() {
-            $( "#sortable1, #sortable2" ).sortable({
+            $( "#sortable1, #sortable2, #sortable3" ).sortable({
               connectWith: ".connectedSortable"
             }).disableSelection();
           } );
@@ -60,14 +60,15 @@
   <input id="butId"><br />
   <!-- this makes the button -->
   <button type="button" onClick="more()">Add Item</button>
+  <button type="button" onClick="remore()">remove Item</button>
 </div>
 
   <div class="sort">
-    <ul id="sortable1" class="connectedSortable">
+    <ul id="sortable1" class="connectedSortable" style="align-content:center">
     </ul>
     <ul id="sortable2" class="connectedSortable">
     </ul>
-    <ul id="sortable2" class="connectedSortable">
+    <ul id="sortable3" class="connectedSortable">
     </ul>
   </div>
 
