@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+<!-- this links the jquery -->
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
+// this lets us move the boxes
           $( function() {
             $( "#sortable1, #sortable2" ).sortable({
               connectWith: ".connectedSortable"
@@ -39,7 +41,9 @@
 <hr class="hr3">
 
 
-  <div class="row">
+
+<!-- these are our column titles -->
+    <div class="row">
       <div class="column">
         <h2 align="center">To Do</h2>
       </div>
@@ -59,7 +63,6 @@
   <!-- this makes the button -->
   <button type="button" onClick="more()">Add Item</button>
 </div>
-
 
 <div class="sort">
   <ul id="sortable1" class="connectedSortable">
