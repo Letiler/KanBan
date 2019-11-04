@@ -7,7 +7,7 @@
       <script>
 // this lets us move the boxes
           $( function() {
-            $( "#sortable1, #sortable2" ).sortable({
+            $( "#sortable1, #sortable2, #sortable3" ).sortable({
               connectWith: ".connectedSortable"
             }).disableSelection();
           } );
@@ -23,6 +23,7 @@
     <link rel="stylesheet" type= "text/css" href="layout.css">
   </head>
   <body>
+
 <!-- This is our website header -->
     <div class="header">
       <h1>After~Coding KanBan</h1>
@@ -35,6 +36,7 @@
       <a href="memes.html">Memes</a>
       <a href="employees.html" style="float:right">Employees</a>
     </div>
+
 <!-- added the horizontal lines- VASH-->
 <hr class="hr1">
 <hr class="hr2">
@@ -45,6 +47,7 @@
   <input id="butId"><br />
   <!-- this makes the button -->
   <button type="button" onClick="more()">Add Item</button>
+  <button type="button" onClick="remove()">Remove Item</button>
 </div>
 
 <!-- these are our column titles -->
@@ -66,10 +69,16 @@
         <ul id="sortable2" class="connectedSortable">
         </ul>
       </div>
-  </div>
+    </div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <div class="container">
+  <div class="square"> </div>
+</div>
+  </div>-->
 
 <!-- this is part of our boxes im not sure what it does -->
-<div class="sort"></div>
+    <div class="sort"></div>
 
   </body>
 </html>

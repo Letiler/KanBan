@@ -64,8 +64,10 @@ body {
 /* Formats the button */
 .addItem {
   text-align: center;
-
 }
+
+#sortable1, #sortable2, #sortable3 {
+    border: 1px solid #eee;
 
 /* Formats the drag and drop columns */
 #sortable1, #sortable2 {
@@ -85,11 +87,18 @@ body {
     padding: 5px;
     font-size: 1.2em;
     width: 120px;
-    background-color: black;
 
+    background-color: white;
 }
 
-.noobcakes {
-	margin: auto;
-	width: 100%;
+
+li a:hover {
+  background-color: #111;
 }
+
+/* This is a test trash can i was working on FYI. */
+/* .square {
+height: 50px;
+width: 50px;
+background-color: red
+} */
