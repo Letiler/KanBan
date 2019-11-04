@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+<!-- this links the jquery -->
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
+// this lets us move the boxes
           $( function() {
-            $( "#sortable1, #sortable2" ).sortable({
+            $( "#sortable1, #sortable2, #sortable3" ).sortable({
               connectWith: ".connectedSortable"
             }).disableSelection();
           } );
@@ -22,8 +24,8 @@
   </head>
   <body>
     
-    <div class="header">
 <!-- This is our website header -->
+    <div class="header">
       <h1>After~Coding KanBan</h1>
     </div>
 
@@ -40,21 +42,6 @@
 <hr class="hr2">
 <hr class="hr3">
 
-
-  <div class="row">
-      <div class="column">
-        <h2 align="center">To Do</h2>
-      </div>
-
-      <div class="column">
-        <h2 align="center">Doing</h2>
-      </div>
-
-      <div class="column">
-        <h2 align="center">Done</h2>
-      </div>
-  </div>
-
 <div>
   <!-- this is the button id -->
   <input id="butId"><br />
@@ -62,14 +49,43 @@
   <button type="button" onClick="more()">Add Item</button>
 </div>
 
-<div class="sort">
-  <ul id="sortable1" class="connectedSortable">
-  </ul>
-  <ul id="sortable2" class="connectedSortable">
-  </ul>
-  <ul id="sortable2" class="connectedSortable">
-  </ul>
+<!-- these are our column titles -->
+    <div class="row">
+      <div class="column">
+        <h2 align="center">To Do</h2>
+        <ul id="sortable1" class="connectedSortable">
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2 align="center">Doing</h2>
+        <ul id="sortable2" class="connectedSortable">
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2 align="center">Done</h2>
+        <ul id="sortable2" class="connectedSortable">
+        </ul>
+      </div>
+    </div>
+
+<div>
+  <!-- this is the button id -->
+  <input id="butId"><br />
+  <!-- this makes the button -->
+  <button type="button" onClick="more()">Add Item</button>
+  <button type="button" onClick="remove()">remove Item</button>
 </div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <div class="container">
+  <div class="square"> </div>
+</div> 
+  </div>-->
+
+<!-- this is part of our boxes im not sure what it does -->
+    <div class="sort"></div>
 
   </body>
 </html>
