@@ -7,7 +7,7 @@
       <script>
 // this lets us move the boxes
           $( function() {
-            $( "#sortable1, #sortable2" ).sortable({
+            $( "#sortable1, #sortable2, #sortable3" ).sortable({
               connectWith: ".connectedSortable"
             }).disableSelection();
           } );
@@ -66,8 +66,23 @@
         <ul id="sortable2" class="connectedSortable">
         </ul>
       </div>
-  </div>
+    </div>
+
+<div>
+  <!-- this is the button id -->
+  <input id="butId"><br />
+  <!-- this makes the button -->
+  <button type="button" onClick="more()">Add Item</button>
+  <button type="button" onClick="remove()">remove Item</button>
+</div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <div class="container">
+  <div class="square"> </div>
+</div> 
+  </div>-->
 
 <div class="sort"></div>
+
   </body>
 </html>
