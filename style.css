@@ -64,8 +64,10 @@ body {
 /* Formats the button */
 .addItem {
   text-align: center;
-
 }
+
+#sortable1, #sortable2, #sortable3 {
+    border: 1px solid #eee;
 
 /* Formats the drag and drop columns */
 #sortable1, #sortable2 {
@@ -86,5 +88,15 @@ body {
     font-size: 1.2em;
     width: 120px;
     background-color: black;
-
 }
+
+li a:hover {
+  background-color: #111;
+}
+
+/* This is a test trash can i was working on FYI. */
+/* .square {
+height: 50px;
+width: 50px;
+background-color: red
+} */

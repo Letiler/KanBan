@@ -7,3 +7,12 @@ function more() {
   node.appendChild(textnode); 
   document.getElementById("sortable1").appendChild(node).classname; 
 }
+
+function remove() { 
+  var doc = document.getElementById("sortable1")
+  var doc2 = document.getElementById("sortable2")
+  var doc3 = document.getElementById("sortable3")  
+  doc.removeChild(doc.childNodes[0]);
+  doc2.removeChild(doc2.childNodes[0]);
+  doc3.removeChild(doc3.childNodes[0]);
+}
