@@ -1,67 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+<!-- this links the jquery -->
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script>
+// this lets us move the boxes
+          $( function() {
+            $( "#sortable1, #sortable2, #sortable3" ).sortable({
+              connectWith: ".connectedSortable"
+            }).disableSelection();
+          } );
+          </script>
     <meta charset="utf-8">
 <!-- this give the title to the webpage -->
     <title>After~Coding KanBan</title>
 <!-- this links the javascript -->
     <script src="script.js"> </script>
 <!-- this links the style -->
-
-    <link rel="stylesheet" href="syle.css">
-<!-- this links the layout -->
-    <link rel="stylesheet" href="layout.css">
-
-
     <link rel="stylesheet" type="text/css" href="style.css">
 <!-- this links the layout -->
     <link rel="stylesheet" type= "text/css" href="layout.css">
   </head>
-
-
   <body>
-    <div class="header">
+
 <!-- This is our website header -->
+    <div class="header">
       <h1>After~Coding KanBan</h1>
     </div>
 
-<ul>
-  <a href="WebsiteHTML.html">Home</a>
-  <a href="Project.html">Project</a>
-  <a href="memes.html">Memes</a>
-  <a href="employees.html" style="float:right">Employees</a>
-</ul>
-
-    <div class="row">
-      <div class="column">
-        <h2>To Do</h2>
-      </div>
-
-      <div class="column">
-        <h2>Doing</h2>
-      </div>
-
-      <div class="column">
-        <h2>Done</h2>
-      </div>
+<!-- Fixed the navbar- VASH-->
+    <div class="topnav">
+      <a href="WebsiteHTML.html">Home</a>
+      <a href="Project.html">Project</a>
+      <a href="memes.html">Memes</a>
+      <a href="employees.html" style="float:right">Employees</a>
     </div>
+
+<!-- added the horizontal lines- VASH-->
+<hr class="hr1">
+<hr class="hr2">
+<hr class="hr3">
 
 <div>
   <!-- this is the button id -->
   <input id="butId"><br />
   <!-- this makes the button -->
-  <button type="button">Add Item</button>
+  <button type="button" onClick="more()">Add Item</button>
+  <button type="button" onClick="remove()">Remove Item</button>
 </div>
 
-  <div class="sort">
-    <ul id="sortable1" class="connectedSortable">
-                  <li class="ui-state-default double">Item 1</li>
-                  <li class="ui-state-default double">Item 2</li>
-                  <li class="ui-state-default double">Item 3</li>
-                  <li class="ui-state-default double">Item 4</li>
-                  <li class="ui-state-default double">Item 5</li>
-    </ul>
-  </div>
+<!-- these are our column titles -->
+    <div class="row">
+      <div class="column">
+        <h2 align="center">To Do</h2>
+        <ul id="sortable1" class="connectedSortable">
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2 align="center">Doing</h2>
+        <ul id="sortable2" class="connectedSortable">
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2 align="center">Done</h2>
+        <ul id="sortable2" class="connectedSortable">
+        </ul>
+      </div>
+    </div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <div class="container">
+  <div class="square"> </div>
+</div>
+  </div>-->
+
+<!-- this is part of our boxes im not sure what it does -->
+    <div class="sort"></div>
 
   </body>
 </html>
