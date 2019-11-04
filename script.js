@@ -8,6 +8,8 @@ function more() {
   document.getElementById("sortable1").appendChild(node).classname; 
 }
 
+
+// this is the remove button 
 function remove() { 
   var doc = document.getElementById("sortable1")
   var doc2 = document.getElementById("sortable2")
@@ -16,3 +18,8 @@ function remove() {
   doc2.removeChild(doc2.childNodes[0]);
   doc3.removeChild(doc3.childNodes[0]);
 }
+$( function() {
+  $( "#sortable1, #sortable2, #sortable3" ).sortable({
+    connectWith: ".connectedSortable"
+  }).disableSelection();
+} );
