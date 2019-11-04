@@ -18,3 +18,8 @@ function remove() {
   doc2.removeChild(doc2.childNodes[0]);
   doc3.removeChild(doc3.childNodes[0]);
 }
+$( function() {
+  $( "#sortable1, #sortable2, #sortable3" ).sortable({
+    connectWith: ".connectedSortable"
+  }).disableSelection();
+} );
