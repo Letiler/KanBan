@@ -64,7 +64,6 @@ body {
 /* Formats the button */
 .addItem {
   text-align: center;
-
 }
 
 /* Formats the drag and drop columns */
@@ -85,6 +84,6 @@ body {
     padding: 5px;
     font-size: 1.2em;
     width: 120px;
-    background-color: black;
+    background-color: white;
 
 }
