@@ -8,6 +8,8 @@ function more() {
   document.getElementById("sortable1").appendChild(node).classname; 
 }
 
+
+// this is the remove button 
 function remove() { 
   var doc = document.getElementById("sortable1")
   var doc2 = document.getElementById("sortable2")
