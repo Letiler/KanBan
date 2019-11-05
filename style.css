@@ -55,7 +55,6 @@
   padding-top: 0px;
 }
 
-
 body {
     min-width: 520px;
     font-family: "Segoe UI";
@@ -69,31 +68,26 @@ body {
     padding-top: 30px;
   }
 
-  .portlet {
-    margin: 0 1em 1em 0;
-    padding: 0.3em;
-    border: 2px double black;
-  }
+/* Formats the drag and drop columns */
+ #sortable1, #sortable2, #sortable3 {
+  border: 1px solid black;
+  width: auto;
+  min-height: 120px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 
-  .portlet-header {
-    padding: 0.2em 0.3em;
-    margin-bottom: 0.5em;
-    position: relative;
-  }
+}
 
-  .portlet-toggle {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -8px;
-  }
-
-  .portlet-content {
-    padding: 0.4em;
-  }
-
-  .portlet-placeholder {
-    border: 1px dotted black;
-    margin: 0 1em 1em 0;
-    height: 50px;
-  }
+/* Formats the drag and drop boxes */
+#sortable1 li, #sortable2 li, #sortable3 li {
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 120px;
+}
