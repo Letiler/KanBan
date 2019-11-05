@@ -56,17 +56,21 @@
 }
 
 body {
-    min-width: 520px;
-    font-family: "Segoe UI";
-    background: #ececec;
-  }
+  min-width: 520px;
+  font-family: "Segoe UI";
+  background: #ececec;
+}
 
-  .column {
-    width: 170px;
-    float: left;
-    padding-bottom: 100px;
-    padding-top: 30px;
-  }
+.column {
+  width: 170px;
+  float: left;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+.itemFunctions {
+  float: right;
+}
 
 /* Formats the drag and drop columns */
  #sortable1, #sortable2, #sortable3 {

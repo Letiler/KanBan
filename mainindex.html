@@ -42,16 +42,6 @@
 
 <div>
 
-  <!-- this is the add button id -->
-  <input id="butId"> <button type="button" onClick="more()">Add Item</button>
-  <br />
-
-  <!-- this is the due dates button -->
-  <!-- <input id="dueDate"> <button type="button" onClick="more()">Due Dates</button>
-  <br /> -->
-
-  <!-- this makes the remove button -->
-  <button type="button" onClick="remove()">Remove Item</button>
 
 </div>
     <div class="sort"></div>
@@ -59,28 +49,22 @@
 <!-- these are our column titles -->
 <div class="row">
    <div class="column">
-        <h2 align="center">To Do</h2>
+        <h2 class="cardHeading"align="center">To Do</h2>
         <ul id="sortable1" class="connectedSortable">
         </ul>
       </div>
 
   <div class="column">
-    <h2 align="center">Doing</h2>
+    <h2 class="cardHeading" align="center">Doing</h2>
     <ul id="sortable2" class="connectedSortable">
     </ul>
   </div>
 
   <div class="column">
-        <h2 align="center">Done</h2>
+        <h2 class="cardHeading" align="center">Done</h2>
         <ul id="sortable3" class="connectedSortable">
         </ul>
       </div>
-  
-  <div class="column">
-    <h2>Done</h2>
-    <ul id="sortable2" class="connectedSortable">
-    </ul>
-  </div>
 
 </div>
 <div class="container">
@@ -88,3 +72,21 @@
     </div>
 
 </div>
+
+<textarea class="js-card-title" id="card" dir="auto" placeholder="Enter a title for this card…" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 54px;"></textarea>
+
+<input class="js-add-card" type="submit" value="Add Card" onclick="add()">
+
+
+<!-- <div class="itemFunctions">
+ this is the add button id
+<input id="butId"><br>
+<button type="button" onClick="more()">Add Item</button>
+
+this is the due dates button
+<input id="dueDate"> <button type="button" onClick="more()">Due Dates</button>
+<br />
+
+ this makes the remove button
+<button type="button" onClick="remove()">Remove Item</button>
+</div> -->
