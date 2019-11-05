@@ -22,6 +22,14 @@ function remove() {
    }).disableSelection();
   } );
 
+
+  function add() {
+    var para = document.createElement("P");
+    para.innerText = document.getElementById("card").value;
+    document.body.appendChild(para);
+  }
+
+
 // function dates(){
 //   var dd = someDate.getDate();
 // var mm = someDate.getMonth() + 1;
@@ -30,4 +38,3 @@ function remove() {
 // var someFormattedDate = dd + '/'+ mm + '/'+ y;
 // document.getElementById('dueDate')
 // }
-
