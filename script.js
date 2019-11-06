@@ -1,3 +1,4 @@
+
 function more() {
   let a = document.getElementById('butId').value
   var node = document.createElement("LI");
@@ -20,3 +21,10 @@ function remove() {
      connectWith: ".connectedSortable"
    }).disableSelection();
   } );
+
+  function add() {
+    var para = document.createElement("P");
+    para.innerText = document.getElementById("card").value;
+    document.body.appendChild(para);
+  }
+
