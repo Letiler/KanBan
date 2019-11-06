@@ -23,8 +23,7 @@ function remove() {
   } );
 
   function add() {
-    var para = document.createElement("P");
+    var para = document.createElement("li");
     para.innerText = document.getElementById("card").value;
-    document.body.appendChild(para);
+    document.getElementById("sortable1").appendChild(para);
   }
-

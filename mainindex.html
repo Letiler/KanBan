@@ -39,21 +39,15 @@
 <hr class="hr1">
 <hr class="hr2">
 <hr class="hr3">
-<div>
 
-  <!-- this is the add button id -->
-  <input id="butId">
-  <br>
-<!-- this makes the add button -->
-  <button type="button" onClick="more()">Add Item</button>
-
-
-</div>
     <div class="sort"></div>
 
 <!-- these are our column titles -->
 <div class="row">
    <div class="column">
+     <textarea class="js-card-title" id="card" dir="auto" placeholder="Enter a title for this card…" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 54px;"></textarea>
+     <input class="js-add-card" type="submit" value="Add Card" onclick="add()">
+
         <h2 class="cardHeading"align="center">To Do</h2>
         <ul id="sortable1" class="connectedSortable">
         </ul>
@@ -72,28 +66,5 @@
       </div>
 
 </div>
-<div class="container">
-<div class="square"> </div>
-    </div>
-
-</div>
-
-<textarea class="js-card-title" id="card" dir="auto" placeholder="Enter a title for this card…" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 54px;"></textarea>
-
-<input class="js-add-card" type="submit" value="Add Card" onclick="add()">
-
-
-<!-- <div class="itemFunctions">
- this is the add button id
-<input id="butId"><br>
-<button type="button" onClick="more()">Add Item</button>
-
-this is the due dates button
-<input id="dueDate"> <button type="button" onClick="more()">Due Dates</button>
-<br />
-
- this makes the remove button
-<button type="button" onClick="remove()">Remove Item</button>
-</div> -->
-
-<!-- fhgkdjfhgdkhg -->
+</body>
+</html>
