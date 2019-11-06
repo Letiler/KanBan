@@ -28,3 +28,11 @@ function remove() {
    }).disableSelection();
   } );
 
+<<<<<<< HEAD
+=======
+  function add() {
+    var para = document.createElement("li");
+    para.innerText = document.getElementById("card").value;
+    document.getElementById("sortable1").appendChild(para);
+  }
+>>>>>>> 07c716f706e5da17164029a78ccbac5137e64d14
