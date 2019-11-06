@@ -1,6 +1,6 @@
 
 function more() {
-  let a = document.getElementById('butId').value
+  let a = document.getElementById('card').value
   var node = document.createElement("LI");
   var textnode =
       document.createTextNode(a);
@@ -23,13 +23,6 @@ function remove() {
   } );
 
 
-  function add() {
-    var para = document.createElement("P");
-    para.innerText = document.getElementById("card").value;
-    document.body.appendChild(para);
-  }
-
-
 // function dates(){
 //   var dd = someDate.getDate();
 // var mm = someDate.getMonth() + 1;
@@ -38,3 +31,19 @@ function remove() {
 // var someFormattedDate = dd + '/'+ mm + '/'+ y;
 // document.getElementById('dueDate')
 // }
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
