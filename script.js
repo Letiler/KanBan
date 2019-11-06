@@ -4,15 +4,21 @@ function more() {
   var node = document.createElement("LI");
   var textnode =
       document.createTextNode(a);
+  var img = document.createElement('img'); 
+  img.src = "X.png"
+  img.className = "cancelimg"
+  img.onclick = function remove() {
+    
+  }
   node.className = "ui-state-default double"
   node.appendChild(textnode);
+  node.appendChild(img);
   document.getElementById("sortable1").appendChild(node).classname;
 }
 
 // this is the remove button
 function remove() {
-  var doc3 = document.getElementById("sortable3")
-  doc3.removeChild(doc3.childNodes[0]);
+  
 }
 
 // this is a jquary to make the
@@ -22,12 +28,11 @@ function remove() {
    }).disableSelection();
   } );
 
-// function dates(){
-//   var dd = someDate.getDate();
-// var mm = someDate.getMonth() + 1;
-// var y = someDate.getFullYear();
-//
-// var someFormattedDate = dd + '/'+ mm + '/'+ y;
-// document.getElementById('dueDate')
-// }
-
+<<<<<<< HEAD
+=======
+  function add() {
+    var para = document.createElement("li");
+    para.innerText = document.getElementById("card").value;
+    document.getElementById("sortable1").appendChild(para);
+  }
+>>>>>>> 07c716f706e5da17164029a78ccbac5137e64d14
