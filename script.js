@@ -1,14 +1,14 @@
 
 function more() {
-  let a = document.getElementById('card').value
+  let a = document.getElementById('butId').value
   var node = document.createElement("LI");
   var textnode =
       document.createTextNode(a);
-  var img = document.createElement('img'); 
+  var img = document.createElement('img');
   img.src = "X.png"
   img.className = "cancelimg"
   img.onclick = function remove() {
-    
+
   }
   node.className = "ui-state-default double"
   node.appendChild(textnode);
@@ -16,9 +16,9 @@ function more() {
   document.getElementById("sortable1").appendChild(node).classname;
 }
 
-// this is the remove button
+// this was the remove button
 function remove() {
-  
+
 }
 
 // this is a jquary to make the
