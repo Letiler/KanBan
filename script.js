@@ -20,12 +20,3 @@ function remove() {
      connectWith: ".connectedSortable"
    }).disableSelection();
   } );
-
-// function dates(){
-//   var dd = someDate.getDate();
-// var mm = someDate.getMonth() + 1;
-// var y = someDate.getFullYear();
-//
-// var someFormattedDate = dd + '/'+ mm + '/'+ y;
-// document.getElementById('dueDate')
-// }
