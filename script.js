@@ -7,9 +7,7 @@ function more() {
   var img = document.createElement('img');
   img.src = "X.png"
   img.className = "cancelimg"
-  img.onclick = function remove() {
-
-  }
+  img.setAttribute("onClick", "remove(this)") 
   node.className = "ui-state-default double"
   node.appendChild(textnode);
   node.appendChild(img);
@@ -17,8 +15,8 @@ function more() {
 }
 
 // this was the remove button
-function remove() {
-
+function remove(id) {
+$(id).parent().remove()
 }
 
 // this is a jquary to make the
