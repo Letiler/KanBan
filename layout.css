@@ -9,11 +9,21 @@
   clear: both;
 }
 
-
-.cancelimg{
-
+.cancelimg  {
+  float: right;
   width: 16px;
   height: 16px;
+}
+
+.flex {
+  padding-top: 10px;
+  display: flex;
+}
+
+#addButton  {
+  padding-left: 3px;
+  width: 36px;
+  height: 36px;
 }
 
 @media screen and (max-width: 600px) {

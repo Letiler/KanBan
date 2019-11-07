@@ -7,12 +7,13 @@ function more() {
   var img = document.createElement('img');
   img.src = "X.png"
   img.className = "cancelimg"
-  img.setAttribute("onClick", "remove(this)") 
+  img.setAttribute("onClick", "remove(this)")
   node.className = "ui-state-default double"
   node.appendChild(textnode);
   node.appendChild(img);
   document.getElementById("sortable1").appendChild(node).classname;
 }
+
 
 // this was the remove button
 function remove(id) {
